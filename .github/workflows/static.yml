@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - 'network_with_communities.html'  # Ensures the workflow runs only when this file changes
+      - 'https://github.com/chpk/sentiment_analysis/blob/main/network_with_communities.html'  # Ensures the workflow runs only when this file changes
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
     - name: Upload HTML File
       uses: actions/upload-pages-artifact@v3
       with:
-        path: 'network_with_communities.html'  # Specify only the HTML file
+        path: 'https://github.com/chpk/sentiment_analysis/blob/main/network_with_communities.html'  # Specify only the HTML file
 
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
